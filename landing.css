@@ -1,0 +1,480 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(218, 224, 230);
+  }
+  
+  /* Override for small screens */
+  @media (max-width: 549px) {
+    body {
+      background-color: rgb(25, 24, 24);
+    }
+  }
+@media (min-width: 300px) and (max-width: 549px){
+#Navigation_bar{
+    position: sticky;
+    top:0;
+    overflow:hidden;
+    background-color: rgb(229, 233, 237);
+    display: flex;
+    flex-direction: row;
+    place-items: left;
+    height:70px;
+    text-decoration:none;
+    gap:2px;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(163, 180, 240, 0.2);
+}
+}
+#Navigation_bar{
+  position: sticky;
+  top:0;
+  overflow:hidden;
+  background-color: rgb(229, 233, 237);
+  display: flex;
+  flex-direction: row;
+  place-items: left;
+  height:70px;
+  text-decoration:none;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(163, 180, 240, 0.2);
+}
+#Navigation_bar a:not(.logo){
+    float:left;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding:1px 1px;
+    font-size:17px;
+    text-decoration: none;
+    justify-content: space-between;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  padding:10px;
+  position: sticky;
+}
+
+@media (min-width: 300px) and (max-width: 549px){
+  #Navigation_bar a:not(.logo){
+    float:left;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size:8px;
+  position: sticky;
+  font-weight: 550;
+}
+}
+@media (min-width: 300px) and (max-width: 549px){
+  .logo {
+    color: rgba(182, 11, 53, 0.934);
+     float: left;
+   font-size:10px !important;
+   text-decoration: none;
+     position: sticky;
+     padding-left: 8px !important;
+     padding-right:1px !important ;
+}
+}
+.logo {
+   color: rgba(182, 11, 53, 0.934);
+    float: left;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bolder;
+  font-style: normal;
+  font-size:25px;
+  text-decoration: none;
+  padding:10px;
+  padding-left: 40px;
+  padding-right:40px;
+  position: sticky;
+  }
+
+#Navigation_bar a:not(.logo):hover{
+    color: rgba(159, 5, 56, 0.934);
+}
+#Navigation_bar a.login {
+    background-color:rgb(236, 25, 68);
+    color:aliceblue; 
+    border-radius: 12px;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+.Imagecontainer
+{
+    justify-content: center;
+    height: 100vh;            
+    width: 100%;             
+    object-fit: cover; 
+    margin: 0 auto;
+    filter: opacity(0.9);
+  display: block;
+}
+@media (min-width: 300px) and (max-width: 549px){
+  .Imagecontainer
+{
+    justify-content: center;
+    height: 60vh;            
+    width: 100%;             
+    object-fit: cover; 
+    margin: 0 auto;
+    filter: opacity(0.8);
+  display: block;
+}
+}
+.slideshow-container {
+    max-width:100%;
+    position: relative;
+    margin: auto;
+    background-color: black;
+    overflow: hidden;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(182, 11, 53, 0.934);
+  }
+  @media (min-width: 300px) and (max-width: 549px){
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 5px;
+      color: rgb(10, 10, 12);
+      font-weight: bold;
+      font-size: 12px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background-color: rgba(182, 11, 53, 0.934);
+    }
+  }
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(182, 11, 53, 0.934);
+  }
+  @media (min-width: 300px) and (max-width: 549px){
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:beige;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+  /* Caption text */
+  @media (min-width: 901px){
+  .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(237, 241, 244);
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+  
+@media (min-width: 550px) and (max-width: 900px){
+  .text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:rgb(237, 241, 244);
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot-container {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgb(236, 25, 68);
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .text2
+  {
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    left: 40%;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bolder;
+  margin: 10px;
+  font-style: normal;
+  color:rgb(21, 21, 21)
+  }
+  @media (min-width: 300px) and (max-width: 549px){
+    .text2
+    {
+      font-size: 40px;
+      font-weight: bolder;
+      text-align: center;
+      width: 100%;
+      padding: 0 20px;
+      left: 40%;
+      font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    margin: 10px;
+    font-style: normal;
+    color:rgb(219, 219, 222)
+    }
+  }
+  .tag{
+    color:#ac0542;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    left: 30%;
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:bolder;
+  margin-top: 150px;
+  }
+  @media (min-width: 300px) and (max-width: 549px){
+    .tag{
+      color:#ac0542;
+      text-align: center;
+      width: 100%;
+      padding: 0 20px;
+      left: 30%;
+      font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    margin-top: 50px;
+    }
+  }
+  @media (min-width: 300px) and (max-width: 549px){
+  .dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    margin-top: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .dot.active,
+  .dot:hover {
+    background-color: rgb(236, 25, 68);
+  }
+}
+@media (min-width: 300px) and (max-width: 549px){
+.dot-container {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom:5px;
+}
+}
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 60px; /* row-gap column-gap */
+  padding: 20px;
+}
+
+@media (min-width: 300px) and (max-width: 549px){
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 60px; /* row-gap column-gap */
+    padding: 20px;
+  }
+}
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+}
+@media (min-width: 300px) and (max-width: 549px){
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+  }
+}
+
+.Sphere {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgb(186, 15, 57);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(163, 180, 240, 0.4);
+}
+
+@media (min-width: 300px) and (max-width: 549px){
+  .Sphere {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgb(200, 23, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+  }
+}
+#icon-envelop {
+  font-size: 48px;
+  color:rgb(248, 248, 237);
+}
+@media (min-width: 300px) and (max-width: 549px){
+  #icon-envelop {
+    font-size: 30px;
+    color:rgb(252, 252, 249);
+  }
+}
+.icon-text {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 1.2;
+  color: rgb(25, 25, 25);
+}
+@media (min-width: 300px) and (max-width: 549px){
+ .icon-text {
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color:rgb(244, 244, 246)
+} 
+}
+.Sphere {
+  /* Other styles for the Sphere */
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.Sphere:hover {
+  background-color: rgb(193, 191, 191);
+  transform: translateY(-5px); /* Moves the sphere 2px down */
+}
+
+.Sphere:hover #icon-envelop {
+  color: #df0e5b;
+  transform: translateY(-5px); /* Moves the icon 2px down */
+}
+@media (min-width: 300px) and (max-width: 549px) {
+  .Sphere:active {
+    background-color: rgb(173, 170, 170);
+    transform: translateY(-5px);
+  }
+  .Sphere:active #icon-envelop {
+    color: pink;
+    transform: translateY(-5px);
+  }
+}
